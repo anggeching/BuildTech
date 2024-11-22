@@ -1267,6 +1267,10 @@ section,
   color: var(--accent-color);
 }
 
+.accent-icon {
+  color: var(--accent-color); /* Use the accent color variable defined in your CSS */
+  font-weight: bolder;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
