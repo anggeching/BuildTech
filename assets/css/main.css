@@ -270,10 +270,18 @@ h6 {
   margin-right: 20px;
 }
 
-/* Apply accent color to active links */
+/* Hover, Active, Focus states for links */
+.navmenu a:hover,
 .navmenu .active,
 .navmenu .active:focus {
-  color: var(--accent-color); /* Accent color for active link */
+  color: var(--nav-hover-color);
+}
+
+/* Apply accent color to icons when hovered or active */
+.navmenu a:hover .navicon,
+.navmenu .active .navicon,
+.navmenu .active:focus .navicon {
+  color: var(--accent-color);
 }
 
 /* Apply accent color to icons in active state */
@@ -281,19 +289,6 @@ h6 {
 .navmenu .active:focus .navicon {
   color: var(--accent-color); /* Accent color for active link icons */
 }
-
-/* Hover state: Apply hover effect when hovering over the links */
-.navmenu a:hover,
-.navmenu a:focus {
-  color: var(--nav-hover-color);
-}
-
-/* Apply accent color to icons on hover */
-.navmenu a:hover .navicon,
-.navmenu a:focus .navicon {
-  color: var(--accent-color);
-}
-
 
 /*--------------------------------------------------------------
 # Global Footer
