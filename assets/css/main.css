@@ -279,6 +279,8 @@ h6 {
 .navmenu .active .navicon,
 .navmenu .active:focus .navicon {
   color: var(--accent-color); /* Accent color for active link icons */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /*--------------------------------------------------------------
