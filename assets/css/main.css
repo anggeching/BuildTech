@@ -444,14 +444,13 @@ section,
 .section-title {
   padding-bottom: 60px;
   position: relative;
-  margin-left: 100px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-left: 300px;
+  margin-left: 150px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -469,8 +468,16 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  margin-left: 150px;
 }
 
+.isotope-layout{
+  margin-left: 150px;
+}
+
+.container-item h2 {
+  margin-left: 150px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -511,11 +518,14 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
+  margin-left: 150px;
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 26px;
+  margin-left: 150px;
+
 }
 
 .hero p span {
@@ -979,6 +989,7 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  margin-left: 150px;
 }
 
 @media (max-width: 575px) {
