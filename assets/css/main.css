@@ -250,6 +250,8 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
   width: 100%;
+  margin-left: 15vw;
+  letter-spacing: 2px;
 }
 
 .navmenu a .navicon,
@@ -438,7 +440,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-left: 150px;
+  margin-left: 17vw;
   padding-bottom: 20px;
   position: relative;
 }
@@ -456,19 +458,19 @@ section,
 
 .section-title p {
   margin-bottom: 0;
-  margin-left: 150px;
+  margin-left: 17vw;
 }
 
 .isotope-layout{
-  margin-left: 150px;
+  margin-left: 17vw;
 }
 
 .container-item h2 {
-  margin-left: 150px;
+  margin-left: 17vw;
 }
 
 .container-item {
-  margin-left: 150px;
+  margin-left: 17vw;
 }
 /*--------------------------------------------------------------
 # Hero Section
@@ -510,13 +512,13 @@ section,
   margin: 0;
   font-size: 64px;
   font-weight: 700;
-  margin-left: 150px;
+  margin-left: 17vw;
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 26px;
-  margin-left: 150px;
+  margin-left: 17vw;
 
 }
 
@@ -604,7 +606,7 @@ section,
   line-height: 40px;
   display: block;
   font-weight: 700;
-  margin-left: 60px;
+  margin-left: 17vw;
 }
 
 .stats .stats-item p {
@@ -981,7 +983,7 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin-left: 150px;
+  margin-left: 17vw;
 }
 
 @media (max-width: 575px) {
