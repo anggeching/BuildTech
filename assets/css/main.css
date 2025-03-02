@@ -275,6 +275,7 @@ h6 {
 .navmenu .active,
 .navmenu .active:focus {
   color: var(--nav-hover-color);
+  font-size: 25px;
 }
 
 /* Apply accent color to icons when hovered or active */
