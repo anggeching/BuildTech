@@ -444,12 +444,14 @@ section,
 .section-title {
   padding-bottom: 60px;
   position: relative;
+  margin-left: 100px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-left: 300px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -1204,3 +1206,4 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
