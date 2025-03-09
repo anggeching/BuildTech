@@ -185,54 +185,8 @@ h6 {
   transition: 0.3s;
 }
 
-.header .social-links a:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-}
-
-@media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
-     300px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .header {
-    left: -100%;
-  }
-}
-
-.header.header-show {
-  left: 0;
-}
-
-.header .header-toggle {
-  color: var(--contrast-color);
-  background-color: var(--accent-color);
-  font-size: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 9999;
-  transition: background-color 0.3s;
-}
-
-.header .header-toggle:hover {
-  color: var(--contrast-color);
-  background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
-}
-
 .container {
-  margin-left: 200px;
+  margin-left: 250px;
   margin-right: 20px;
 }
 
@@ -247,11 +201,12 @@ h6 {
 .navbar-brand {
   width: 250px;
   height: auto;
+  margin-left: 50px;
 }
 
 ul {
   margin-bottom: 180px !important;
-  margin-left: 60px;
+  margin-left: 120px;
 }
 
 .navmenu a,
@@ -496,12 +451,6 @@ section,
   width: auto;
 }
 
-.hero:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
 
 .hero .container {
   position: relative;
@@ -531,18 +480,41 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
+.download-resume {
+  padding: 10px 20px;
+  background-color:rgba(130, 78, 131, 0.7);
+  border: none;
+  border-radius: 0;
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  font-family: var(--heading-font);
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 250px;
+
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+  text-align: center; /* Ensures text is centered */
+}
+
+.download-resume:hover {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-weight: bold;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+}
+
+
 .hero .social-links {
   margin-top: 25px;
 }
 
-.hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
 
 .hero .social-links a:hover {
   color: var(--accent-color);
