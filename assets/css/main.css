@@ -244,6 +244,15 @@ h6 {
   display: none;
 }
 
+.navbar-brand {
+  width: 250px;
+  height: auto;
+}
+
+ul {
+  margin-bottom: 100px !important;
+}
+
 .navmenu a,
 .navmenu a:focus {
   color: var(--nav-color);
