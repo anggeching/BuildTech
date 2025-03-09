@@ -477,7 +477,7 @@ section,
 }
 
 .hero img {
-  height: 800px; /* Adjust as needed */
+  height: 500px; /* Adjust as needed */
   width: auto;
 }
 
@@ -490,7 +490,6 @@ section,
 
 .hero .container {
   position: relative;
-  z-index: 3;
 }
 
 .hero h2 {
