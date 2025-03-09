@@ -231,6 +231,12 @@ h6 {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
+.container {
+  margin-left: 200px;  /* Adjust as needed */
+  margin-right: 20px;
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -250,7 +256,6 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
   width: 100%;
-   1
   letter-spacing: 2px;
 }
 
@@ -490,6 +495,11 @@ section,
 
 .hero .container {
   position: relative;
+
+}
+
+.hero .container .container-item {
+  margin-right: 50px;
 }
 
 .hero h2 {
