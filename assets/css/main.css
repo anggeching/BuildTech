@@ -194,7 +194,7 @@ h6 {
 
   .header~main,
   .header~#footer {
-    margin-left: 300px;
+     300px;
   }
 }
 
@@ -250,7 +250,7 @@ h6 {
   white-space: nowrap;
   transition: 0.3s;
   width: 100%;
-  margin-left: 15vw;
+   1
   letter-spacing: 2px;
 }
 
@@ -442,7 +442,7 @@ section,
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-  margin-left: 17vw;
+   
   padding-bottom: 20px;
   position: relative;
 }
@@ -460,20 +460,9 @@ section,
 
 .section-title p {
   margin-bottom: 0;
-  margin-left: 17vw;
+   
 }
 
-.isotope-layout{
-  margin-left: 17vw;
-}
-
-.container-item h2 {
-  margin-left: 17vw;
-}
-
-.container-item {
-  margin-left: 17vw;
-}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -506,15 +495,15 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 64px;
+  font-size: 50px;
   font-weight: 700;
-  margin-left: 17vw;
+   
 }
 
 .hero p {
   margin: 5px 0 0 0;
   font-size: 26px;
-  margin-left: 17vw;
+   
   color: #040b14;
 }
 
@@ -602,7 +591,7 @@ section,
   line-height: 40px;
   display: block;
   font-weight: 700;
-  margin-left: 17vw;
+   
 }
 
 .stats .stats-item p {
@@ -738,7 +727,7 @@ section,
 }
 
 .portfolio .portfolio-filters li:first-child {
-  margin-left: 0;
+   0;
 }
 
 .portfolio .portfolio-filters li:last-child {
@@ -981,7 +970,7 @@ section,
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin-left: 17vw;
+   
 }
 
 @media (max-width: 575px) {
