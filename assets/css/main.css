@@ -520,18 +520,101 @@ section,
   color: var(--accent-color);
 }
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 1000px) and (max-width: 1700px) { /*SMALL LAPTOP*/
   .hero h2 {
-    font-size: 40px;
+    font-size: 45px;
   }
 
   .hero p {
     font-size: 24px;
   }
+
+  .navbar-brand {
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  ul {
+    margin-bottom: 180px !important;
+    margin-left: 80px;
+  }
+
+  .hero img {
+    height: 420px; /* Adjust as needed */
+    width: auto;
+    display: none;
+  }
+
+  .hero .container {
+    position: relative;
+  }
+  
+  .hero .container .container-item {
+    margin-right: 0px;
+  }
+  
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 10px 10px;
+    font-family: var(--nav-font);
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 80%;
+    letter-spacing: 1px;
+  }
+  
+  .navmenu a .navicon,
+  .navmenu a:focus .navicon {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  /* Hover, Active, Focus states for links */
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+    font-size: 20px;
+  }
+  
 }
 
 
-@media (max-width: 768px) {
+
+@media (min-width: 769px) and (max-width: 999px) { /*SMALL LAPTOP*/
+  .hero h2 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  .navbar-brand {
+    width: 250px;
+    height: auto;
+    margin-left: 10px;
+  }
+  
+  ul {
+    margin-bottom: 180px !important;
+    margin-left: 80px;
+  }
+
+  .hero img {
+    height: 400px; /* Adjust as needed */
+    width: auto;
+  }
+  
+}
+
+@media (max-width: 768px) { /*CELLPHONE*/
   .hero h2 {
     font-size: 32px;
   }
