@@ -500,13 +500,8 @@ section,
 }
 
 .download-resume:hover {
-  display: inline-block;
-  padding: 10px 20px;
   background-color: var(--accent-color);
   color: white;
-  text-decoration: none; /* Remove underline */
-  font-weight: bold;
-  border-radius: 0;
   transition: background-color 0.3s ease;
 }
 
@@ -520,7 +515,7 @@ section,
   color: var(--accent-color);
 }
 
-@media (min-width: 1000px) and (max-width: 1700px) { /*SMALL LAPTOP*/
+@media (min-width: 1111px) and (max-width: 1700px) { /*SMALL LAPTOP*/
   .hero h2 {
     font-size: 45px;
   }
@@ -587,7 +582,7 @@ section,
 
 
 
-@media (min-width: 769px) and (max-width: 999px) { /*SMALL LAPTOP*/
+@media (min-width: 577px) and (max-width: 1100px) { /*SMALL LAPTOP*/
   .hero h2 {
     font-size: 50px;
   }
@@ -597,7 +592,7 @@ section,
   }
 
   .navbar-brand {
-    width: 250px;
+    width: 200px;
     height: auto;
     margin-left: 10px;
   }
@@ -608,19 +603,123 @@ section,
   }
 
   .hero img {
-    height: 400px; /* Adjust as needed */
+    height: 420px; /* Adjust as needed */
     width: auto;
+    display: none;
   }
+
+  .hero .container {
+    position: relative;
+  }
+  
+  .hero .container .container-item {
+    margin-right: 0px;
+  }
+  
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 10px 10px;
+    font-family: var(--nav-font);
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 80%;
+    letter-spacing: 1px;
+  }
+  
+  .navmenu a .navicon,
+  .navmenu a:focus .navicon {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  /* Hover, Active, Focus states for links */
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+    font-size: 20px;
+  }
+
+  .download-resume {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 200px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    text-align: center; /* Ensures text is centered */
+  }
+
+  
   
 }
 
-@media (max-width: 768px) { /*CELLPHONE*/
+@media (max-width: 576px) { /*CELLPHONE*/
   .hero h2 {
     font-size: 32px;
   }
 
   .hero p {
     font-size: 20px;
+  }
+
+  .navbar-brand {
+    width: 100px;
+    height: auto;
+    margin-left: 2px;
+  }
+  
+  ul {
+    margin-bottom: 180px !important;
+    margin-left: 3px;
+  }
+
+  .hero img {
+    height: 420px; /* Adjust as needed */
+    width: auto;
+    display: none;
+  }
+
+  .hero .container {
+    position: relative;
+  }
+  
+  .hero .container .container-item {
+    margin-right: 0px;
+  }
+  
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 10px 10px;
+    font-family: var(--nav-font);
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 80%;
+    letter-spacing: 1px;
+  }
+  
+  .navmenu a .navicon,
+  .navmenu a:focus .navicon {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  
+  /* Hover, Active, Focus states for links */
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+    font-size: 14px;
   }
 }
 
