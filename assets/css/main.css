@@ -975,6 +975,11 @@ ul.portfolio-filters {
   font-size: 16px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 10px;
+}
+
+.portfolio-item {
+  margin-bottom: 20px;
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link,
