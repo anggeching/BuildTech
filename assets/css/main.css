@@ -901,8 +901,12 @@ section,
   margin: 0 10px;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   transition: all 0.3s ease-in-out;
+}
+
+ul.portfolio-filters {
+  margin-bottom: 0px !important;
 }
 
 .portfolio .portfolio-filters li:hover,
