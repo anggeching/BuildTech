@@ -166,23 +166,22 @@ h6 {
   color: var(--heading-color);
 }
 
-.header .social-links {
-  margin: 0 0 20px 0;
+.social-links {
+  margin-bottom: 20px;
+  margin-top: 5px !important;
 }
 
-.header .social-links a {
-  font-size: 16px;
+.social-links a {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
   color: var(--default-color);
-  margin: 0 2px;
-  border-radius: 50%;
-  text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 50px !important;
+  height: 10px;
   transition: 0.3s;
+  padding: 0px 0px !important;
+  justify-content: center;
+  padding-left: 0px !important;
+  margin-left: 0px !important;
 }
 
 .container {
