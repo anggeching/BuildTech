@@ -204,14 +204,14 @@ h6 {
 }
 
 .navbar-brand {
-  width: 250px;
+  width: 210px;
   height: auto;
-  margin-left: 50px;
+  margin-left: 10px;
 }
 
 ul {
   margin-bottom: 180px !important;
-  margin-left: 120px;
+  margin-left: 60px;
 }
 
 .navmenu a,
@@ -219,7 +219,7 @@ ul {
   color: var(--nav-color);
   padding: 15px 10px;
   font-family: var(--nav-font);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -231,8 +231,8 @@ ul {
 
 .navmenu a .navicon,
 .navmenu a:focus .navicon {
-  font-size: 20px;
-  margin-right: 20px;
+  font-size: 16px;
+  margin-right: 16px;
 }
 
 /* Hover, Active, Focus states for links */
