@@ -190,6 +190,11 @@ h6 {
   margin-right: 20px;
 }
 
+.main-container {
+  margin-left: 400px;
+  margin-right: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -891,6 +896,8 @@ section,
   list-style: none;
   text-align: center;
 }
+
+
 
 .portfolio .portfolio-filters li {
   cursor: pointer;
