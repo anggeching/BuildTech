@@ -125,46 +125,8 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Global Header
+# Global Styling
 --------------------------------------------------------------*/
-.header {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 0 15px;
-  width: 300px;
-  transition: all ease-in-out 0.3s;
-  overflow-y: auto;
-  z-index: 997;
-  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.header .profile-img img {
-  margin: 15px auto;
-  display: block;
-  width: 120px;
-  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.header .logo {
-  line-height: 1;
-  margin-bottom: 15px;
-}
-
-.header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
-}
-
-.header .logo h1 {
-  font-size: 24px;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
-}
 
 .social-links {
   margin-bottom: 40px;
@@ -938,6 +900,7 @@ ul.portfolio-filters {
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
+  width: 400px !important;
 }
 
 .portfolio .portfolio-content img {
