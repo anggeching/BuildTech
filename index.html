@@ -4,13 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - iPortfolio Bootstrap Template</title>
+  <title>...</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -23,8 +19,10 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Main CSS File -->
+
+  <!-- CUSTOM CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
@@ -32,38 +30,47 @@
 <body class="index-page">
 
       <!-- Navbar -->
-      <nav class="nav nav-bar d-flex flex-columns position-fixed navmenu align-items-center mx-5 px-3" style="z-index: 1050; width: 250px;  height: 100vh;">
+      <nav class="nav nav-bar d-none d-md-flex flex-column position-fixed navmenu justify-content-center mx-5 px-3" style="z-index: 1050; width: 250px;  height: 100vh;">
+        
+        <img src="assets/img/logo.png" alt="" class="navbar-brand my-2">
+        
+        <div class="social-links d-flex flex-row justify-content-center">
+          <a href="https://www.instagram.com/angge_ching/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/angela-victoria-fruelda-75977b301/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/anggeching" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+        </div>
+        
         <ul class="list-unstyled" >            
           <li class="nav-item"><a href="#hero" class="active bi bi-house navicon"><span></span>Home</a></li>
-          <li class="nav-item"><a href="#about" class="active bi bi-person navicon">About</a></li>
-          <li class="nav-item"><a href="#projects" class="active bi bi-images navicon">Projects</a></li>
+          <!-- <li class="nav-item"><a href="#about" class="active bi bi-person navicon">About</a></li> -->
+          <li class="nav-item"><a href="#projects" class="active bi bi-images navicon">Portfolio</a></li>
           <li class="nav-item"><a href="#contact" class="active bi bi-telephone navicon">Contact</a></li>
       </ul>
-
       </nav>
         
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section">
-
-      <!-- <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class=""> -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="container-item">Angela Victoria Fruelda</h2>
-        <p class="container-item">I'm <span class="typed" data-typed-items="CPE Student, Front-end Developer, Full-stack Web Developer, Generative AI Explorer">CPE Student</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+    <section id="hero" class="hero section text-light p-5 text-center text-sm-start">
+      <div class="container row justify-content-start flex-column-reverse flex-xl-row" data-aos="fade-up" data-aos-delay="100">
+        <div class="container-item col-xxl-6 d-flex flex-column justify-content-center">
+          <h2 class="container-item">Angela <span class="d-none d-md-inline">Victoria</span> Fruelda</h2>
+          <p class="container-item">I'm <span class="typed" data-typed-items="Backend Developer, Experienced Data Developer, Data Analyst Explorer">Backend Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+          
+          <a href="Resume.pdf" class="download-resume my-3" download=>Download Resume</a>
+        </div>
+        
+        <img class="container-item img-fluid d-none col-xl-12 col-xxl-6 d-xxl-block mx-3" src="/assets/img/hero.png" alt="proud programmer">
       </div>
-
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- About Section 
+    <section id="about" class="about section light-background" style="height: 100vh;">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -102,18 +109,18 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section> -->
   
     <!-- Portfolio Section -->
     <section id="projects" class="portfolio section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2 class="container-item">Portfolio</h2>
+      <div class="main-container section-title" data-aos="fade-up">
+        <!-- <h2 class="container-item">Portfolio</h2> -->
         <p class="container-item">A showcase of my recent work and experiments where theory meets application, fueled by my passion for project-based learning.</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="main-container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
@@ -123,47 +130,90 @@
             <li data-filter=".filter-hardware">Hardware</li>
             <li data-filter=".filter-ai">AI 🤖</li>
             <li data-filter=".filter-gamedev">GameDev</li>
-
           </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-2 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
               <div class="portfolio-content h-100">
-                <img src="assets/img/shotclock1.jpeg" class="img-fluid" alt="" style="width: 400px; height: 400px; object-fit: cover;" >
+                
+                <!-- Tech Icons -->
+                <div class="tech-icons mb-2">
+                  <i class="fab fa-python tech-item" title="Python" style="font-size: 1.5rem; color: #3776AB;"></i>
+                  <i class="fab fa-cuttlefish tech-item" title="C++" style="font-size: 1.5rem; color: #659ad2;"></i>
+                </div>
+
+                <img src="assets/img/shotclock1.jpeg" class="img-fluid" alt="" style="width: 400px; height: 300px; object-fit: cover;" >
                 <div class="portfolio-info">
                   <h4>24 Second Shot Clock</h4>
                   <p>Manual Etching PCB Circuit Shot Clock</p>
                   <a href="assets/img/shotclock1.jpeg" title="24 Second Shot Clock" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="prjct1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/shotclock1.jpeg" title="24 Second Shot Clock" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-website">
               <div class="portfolio-content h-100">
-                <img src="assets/img/project/visionbot2.jpeg" class="img-fluid" alt="" style="width: 400px; height: 400px; object-fit: cover;" >
+                <img src="assets/img/project/visionbot2.jpeg" class="img-fluid" alt="" style="width: 400px; height: 300px; object-fit: cover;" >
                 <div class="portfolio-info">
                   <h4>VisionBot</h4>
                   <p>YOLOv8 VisionBot - Smart Object Detection with Interactive Chatbot</p>
                   <a href="assets/img/project/visionbot2.jpeg" title="VisionBot" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="starter-page.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="documentation.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
               <div class="portfolio-content h-100">
-                <img src="assets/img/mazebot1.jpg" class="img-fluid" alt="" style="width: 400px; height: 400px; object-fit: cover;" >
+                <img src="assets/img/mazebot1.jpg" class="img-fluid" alt="" style="width: 400px; height: 300px; object-fit: cover;" >
                 <div class="portfolio-info">
                   <h4>Mazebot</h4>
                   <p>Arduino Uno-Based Maze Solving Robot</p>
                   <a href="assets/img/mazebot1.jpg" title="Mazebot" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="starter-page.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="documentation.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware filter-website">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/home-control.png" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" >
+                <div class="portfolio-info">
+                  <h4>Home Control</h4>
+                  <p>Internet of Things using Raspberry Pi</p>
+                  <a href="assets/img/mazebot1.jpg" title="Mazebot" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="documentation.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/icpep-awarding.jpg" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" >
+                <div class="portfolio-info">
+                  <h4>1st Runner Up</h4>
+                  <p>Digital Electronics Breadboarding Regional Competetion</p>
+                  <a href="assets/img/mazebot1.jpg" title="Mazebot" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="documentation.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gamedev">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/3D Game.png" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" >
+                <div class="portfolio-info">
+                  <h4>Ball Run</h4>
+                  <p>A 3D Game using Unity</p>
+                  <a href="assets/img/3D Game.png" title="A 3D Game using Unity" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="documentation.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
           </div><!-- End Portfolio Container -->
 
         </div>
@@ -177,20 +227,20 @@
     <section id="contact" class="contact section" style="height: 100vh;">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+      <div class="main-container section-title" data-aos="fade-up">
+        <!-- <h2>Contact</h2> -->
         <p>Should you have any questions, feel free to contact me through the details provided below.
 
         </p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="75%">
+      <div class="main-container" data-aos="fade-up" data-aos-delay="75%">
 
         <div class="row gy-1">
 
           <div class="col">
 
-            <div class="info-wrap">
+            <div class="info-wrap ">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
@@ -227,7 +277,7 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="light-background footer position-relative">
 
 
 
