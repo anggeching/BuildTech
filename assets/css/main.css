@@ -858,8 +858,6 @@ section,
   text-align: center;
 }
 
-
-
 .portfolio .portfolio-filters li {
   cursor: pointer;
   display: inline-block;
@@ -1132,6 +1130,7 @@ ul.portfolio-filters {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
+  width: 95%;
    
 }
 
