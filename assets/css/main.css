@@ -146,9 +146,16 @@ h6 {
   margin-left: 0px !important;
 }
 
-.container {
+/* .container {
   margin-left: 250px;
   margin-right: 20px;
+} */
+
+@media (min-width: 992px) {
+  .container {
+    margin-left: 250px;
+    margin-right: 20px;
+  }
 }
 
 .main-container {
