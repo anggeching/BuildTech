@@ -171,6 +171,7 @@ h6 {
 }
 
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -327,11 +328,11 @@ ul {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
@@ -460,24 +461,26 @@ section,
   border-bottom: 2px solid var(--accent-color);
 }
 
-.download-resume {
+/* .download-resume {
   padding: 10px 20px;
   background-color:rgba(130, 78, 131, 0.7);
   border: none;
   border-radius: 0;
-  color: white; /* White text */
-  text-decoration: none; /* Remove underline */
+  color: white; 
+  text-decoration: none;
   font-family: var(--heading-font);
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease;
   width: 250px;
 
-  display: flex; /* Enables flexbox */
-  justify-content: center; /* Centers text horizontally */
-  align-items: center; /* Centers text vertically */
-  text-align: center; /* Ensures text is centered */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
 }
+ */
+
 
 .download-resume:hover {
   background-color: var(--accent-color);
@@ -494,6 +497,26 @@ section,
 .hero .social-links a:hover {
   color: var(--accent-color);
 }
+
+
+/* Phone */
+@media (max-width: 576px) {
+  .download-resume {
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    font-family: var(--heading-font);
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 200px !important;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    text-align: center; /* Ensures text is centered */
+  }
+  
+}
+
 
 @media (min-width: 1111px) and (max-width: 1700px) { /*SMALL LAPTOP*/
   .hero h2 {
@@ -804,67 +827,14 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Resume Section
---------------------------------------------------------------*/
-.resume .resume-title {
-  color: var(--heading-color);
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid var(--accent-color);
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: var(--background-color);
-  border: 2px solid var(--accent-color);
-}
-
-/*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+/* Phone */
+@media (max-width: 480px) {
+
+}
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -904,22 +874,59 @@ ul.portfolio-filters {
 
 @media (max-width: 575px) {
   .portfolio .portfolio-filters li {
-    font-size: 14px;
-    margin: 0 5px;
+    font-size: 12px;
   }
+
+  h2.container-item {
+    font-size: 24px;
+    margin: 10px 10px;
+  }
+
+  p.container-item {
+    font-size: 12px;
+    margin: 0px 10px;
+  }
+}
+
+/* .portfolio .portfolio-content {
+  position: relative;
+  overflow: hidden;
+  width: 400px !important;
+} */
+
+/* @media (max-width: 767.98px) { 
+  .portfolio .portfolio-content {
+    width: 300px !important;
+    height: 300px !important;
+  }
+} */
+
+.square-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Makes it a square */
+  overflow: hidden;
+}
+
+.square-wrapper img.img-cropped {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-content {
   position: relative;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  width: 400px !important;
 }
 
-@media (max-width: 767.98px) { /* For screens smaller than 768px */
-  .portfolio .portfolio-content {
-    width: 300px !important; /* Adjust width to 100% on small screens */
-    height: 300px !important;
-  }
+.portfolio .portfolio-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio .portfolio-content img {
