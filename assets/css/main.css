@@ -373,11 +373,24 @@ ul {
 /*--------------------------------------------------------------
 # Global Sections
 --------------------------------------------------------------*/
+
+
+/* Phone */
+
+
+.section-title {
+  padding-bottom: 30px !important;
+  position: relative;
+}
+
+
+  
+
 section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: clip;
 }
 
@@ -513,6 +526,13 @@ section,
     justify-content: center; /* Centers text horizontally */
     align-items: center; /* Centers text vertically */
     text-align: center; /* Ensures text is centered */
+
+    .section-title {
+      padding-bottom: 30px !important;
+      position: relative;
+    }
+
+
   }
   
 }
@@ -886,6 +906,14 @@ ul.portfolio-filters {
     font-size: 12px;
     margin: 0px 10px;
   }
+
+  h3 {
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 12px !important;
+  }
 }
 
 /* .portfolio .portfolio-content {
@@ -1166,12 +1194,11 @@ ul.portfolio-filters {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 30px;
   width: 95%;
-   
 }
 
 @media (max-width: 575px) {
   .contact .info-wrap {
-    padding: 20px;
+    padding: 15px;
   }
 }
 
