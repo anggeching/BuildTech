@@ -149,28 +149,10 @@ h6 {
 /* SIZE 2 sm-md */
 @media (min-width: 576px) and (max-width: 768px) {
   .main-container {
-    /* margin-left: 18vw !important; */
+    margin-left: 30vw !important; 
   }
 
 }
-
-/* .container {
-  margin-left: 250px;
-  margin-right: 20px;
-} */
-
-/* .main-container {
-  margin-left: 400px;
-  margin-right: 20px;
-} */
-
-/* @media (min-width: 768px) and (max-width: 1199.98px) {
-  .main-container {
-    margin-left: 400px;
-    margin-right: 20px;
-  }
-} */
-
 
 
 /*--------------------------------------------------------------
@@ -186,7 +168,6 @@ h6 {
   }
 
 }
-
 
 .mobile-nav-toggle {
   display: none;
@@ -470,8 +451,8 @@ section,
   position: relative;
   padding: 80px 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .hero p span {
@@ -518,7 +499,7 @@ section,
 }
 
 /* SIZE 2 sm-md */
-@media (min-width: 575px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .download-resume {
     padding: 10px 20px;
     background-color:rgba(130, 78, 131, 0.7);
@@ -599,34 +580,7 @@ section,
   color: var(--accent-color);
 }
  
-.navmenu a,
-.navmenu a:focus {
-  color: var(--nav-color);
-  padding: 10px 10px;
-  font-family: var(--nav-font);
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  transition: 0.3s;
-  width: 80%;
-  letter-spacing: 1px;
-}
 
-.navmenu a .navicon,
-.navmenu a:focus .navicon {
-  font-size: 16px;
-  margin-right: 20px;
-}
-
-/* Hover, Active, Focus states for links */
-.navmenu a:hover,
-.navmenu .active,
-.navmenu .active:focus {
-  color: var(--nav-hover-color);
-  font-size: 20px;
-}
 
 .download-resume {
   padding: 10px 20px;
