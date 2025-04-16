@@ -368,7 +368,7 @@ ul {
 --------------------------------------------------------------*/
 
 .section-title {
-  padding-bottom: 30px !important;
+  padding-bottom: 30px;
   position: relative;
 }
 
@@ -380,20 +380,48 @@ section,
   overflow: clip;
 }
 
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
+
+/* SIZE 1 */
+@media (max-width: 576px) {
+  .section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 20px 0 !important;
+    overflow: clip;
+  }
+
+  .section-title {
+    padding-bottom: 10px !important;
+    position: relative;
+    margin: 10px !important;
+  }
+
+  .section-title h2 {
+    font-size: 24px !important;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .section-title p {
+    font-size: 14px !important;
+     
+  }
+}
+
 .section-title {
-  padding-bottom: 60px;
   position: relative;
+  margin: 20px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
-   
-  padding-bottom: 20px;
   position: relative;
 }
 
@@ -463,11 +491,7 @@ section,
     align-items: center; /* Centers text vertically */
     text-align: center; /* Ensures text is centered */
 
-    .section-title {
-      padding-bottom: 30px !important;
-      position: relative;
 
-    }
 
   }
   
@@ -492,9 +516,9 @@ section,
 
 }
 
-.hero .container .container-item {
+/* .hero .container .container-item {
   margin-right: 50px;
-}
+} */
 
 
 
@@ -722,6 +746,17 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+
+/* SIZE 1 */
+@media (max-width: 576px) {
+  .portfolio .portfolio-filters li {
+
+    font-size: 12px !important;
+    font-weight: 400;
+    margin-bottom: 20px !important;
+  }
+  
+}
 
 
 .portfolio .portfolio-filters {
@@ -1043,14 +1078,34 @@ ul.portfolio-filters {
   width: 95%;
 }
 
-@media (max-width: 575px) {
+/* SIZE 1 */
+@media (max-width: 576px) {
   .contact .info-wrap {
     padding: 15px;
   }
+
+  .contact .info-item i {
+    font-size: 15px !important;
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .contact .info-item h3 {
+    font-size: 14px !important;
+    font-weight: 700;
+    margin-bottom: 2px !important;
+  }
+
+  .contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 12px !important;
+  }
 }
 
+
 .contact .info-item {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .contact .info-item i {
