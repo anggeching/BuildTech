@@ -25,6 +25,7 @@
   <!-- CUSTOM CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+
 </head>
 
 <body class="index-page">
@@ -51,17 +52,20 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section text-light p-5 text-center text-sm-start">
+    <section id="hero" class="hero section text-light p-5 text-center text-m-start">
       <div class="container row justify-content-start flex-column-reverse flex-xl-row" data-aos="fade-up" data-aos-delay="100">
         <div class="container-item col-xxl-6 d-flex flex-column justify-content-center">
-          <h2 class="container-item">Angela <span class="d-none d-md-inline">Victoria</span> Fruelda</h2>
-          <p class="container-item">I'm <span class="typed" data-typed-items="Backend Developer, Experienced Data Developer, Data Analyst Explorer">Backend Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+          <h2 class="">Angela Victoria Fruelda</h2>
+          <p class="">I'm <span class="typed" data-typed-items="Backend Developer, Experienced Data Developer, Data Analyst Explorer">Backend Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
           
-          <a href="Resume.pdf" class="download-resume my-3" download=>Download Resume</a>
+          <div class="d-flex justify-content-center justify-content-lg-start my-3">
+            <a href="Resume.pdf" class="download-resume" download>Download Resume</a>
+          </div>
+
         </div>
         
-        <!-- <img class="container-item img-fluid d-none col-xl-12 col-xxl-6 d-xxl-block mx-3" src="/assets/img/hero.png" alt="proud programmer"> -->
-         <img src="/assets/img/hero.png" alt="">
+        <img class="container-item img-fluid d-none col-xl-12 col-xxl-6 d-xxl-block mx-3" src="/assets/img/hero.png" alt="proud programmer">
+         <!-- <img src="/assets/img/hero.png" alt=""> -->
       </div>
     </section>
 
@@ -117,13 +121,13 @@
 
       <!-- Section Title -->
       <div class="main-container section-title" data-aos="fade-up">
-        <!-- <h2 class="container-item">Portfolio</h2> -->
+        <h2 class="container-item">Portfolio</h2>
         <p class="container-item">A showcase of my recent work and experiments where theory meets application, fueled by my passion for project-based learning.</p>
       </div><!-- End Section Title -->
 
       <div class="main-container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout mx-3" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
@@ -133,16 +137,25 @@
             <li data-filter=".filter-gamedev">GameDev</li>
           </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-2 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-1 gx-1 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
+            <!--
+            <div class="col-4 d-flex justify-content-center justify-content-md-start portfolio-item isotope-item filter-hardware">
               <div class="portfolio-content h-100">
                 
-                <!-- Tech Icons -->
+                Tech Icons 
                 <div class="tech-icons mb-2">
                   <i class="fab fa-python tech-item" title="Python" style="font-size: 1.5rem; color: #3776AB;"></i>
                   <i class="fab fa-cuttlefish tech-item" title="C++" style="font-size: 1.5rem; color: #659ad2;"></i>
                 </div>
+
+               
+                <div class="square-wrapper">
+                  <img src="assets/img/shotclock1.jpeg"  class="img-cropped" alt="photo">
+                </div>
+
+                 
+
 
                 <img src="assets/img/shotclock1.jpeg" class="img-fluid" alt="" style="width: 400px; height: 300px; object-fit: cover;" >
                 <div class="portfolio-info">
@@ -152,11 +165,30 @@
                   <a href="#" data-bs-toggle="modal" data-bs-target="#docModal" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div> -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ai filter-website">
+            <div class="col-4 portfolio-item isotope-item filter-ai filter-website">
               <div class="portfolio-content h-100">
-                <img src="assets/img/project/visionbot2.jpeg" class="img-fluid" alt="" style="width: 400px; height: 300px; object-fit: cover;" >
+                <!-- <img src="assets/img/project/visionbot2.jpeg" class="img-fluid w-100 aspect-square object-fit-cover" alt="" style="width: 400px; height: 300px; object-fit: cover;" > -->
+                <div class="square-wrapper">
+                  <img src="assets/img/shotclock1.jpeg"  class="img-cropped" alt="photo">
+                </div>
+                <div class="portfolio-info">
+                  <h4>VisionBot</h4>
+                  <p>YOLOv8 VisionBot - Smart Object Detection with Interactive Chatbot</p>
+                  <a href="assets/img/project/visionbot2.jpeg" title="VisionBot" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#docModal" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+
+            <div class="col-4 portfolio-item isotope-item filter-ai filter-website">
+              <div class="portfolio-content h-100">
+                <!-- <img src="assets/img/project/visionbot2.jpeg" class="img-fluid w-100 aspect-square object-fit-cover" alt="" style="width: 400px; height: 300px; object-fit: cover;" > -->
+                <div class="square-wrapper">
+                  <img src="assets/img/project/visionbot2.jpeg"  class="img-cropped" alt="photo">
+                </div>
                 <div class="portfolio-info">
                   <h4>VisionBot</h4>
                   <p>YOLOv8 VisionBot - Smart Object Detection with Interactive Chatbot</p>
@@ -166,9 +198,12 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
+            <div class="col-4 portfolio-item isotope-item filter-hardware">
               <div class="portfolio-content h-100">
-                <img src="assets/img/mazebot1.jpg" class="img-fluid" alt="" style="width: 400px; height: 300px; object-fit: cover;" >
+                <div class="square-wrapper">
+                  <img src="assets/img/mazebot1.jpg"  class="img-cropped" alt="photo">
+                </div>
+                <!-- <img src="assets/img/mazebot1.jpg" class="img-fluid w-100 aspect-square" alt="" style="width: 400px; height: 300px; object-fit: cover;" > -->
                 <div class="portfolio-info">
                   <h4>Mazebot</h4>
                   <p>Arduino Uno-Based Maze Solving Robot</p>
@@ -178,9 +213,13 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware filter-website">
+            <div class="col-4 portfolio-item isotope-item filter-hardware filter-website">
               <div class="portfolio-content h-100">
-                <img src="assets/img/home-control.png" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" >
+
+                <div class="square-wrapper">
+                  <img src="assets/img/home-control.png"  class="img-cropped" alt="photo">
+                </div>
+                <!-- <img src="assets/img/home-control.png" class="img-fluid w-100 aspect-square object-fit-cover" alt="" style="width: 400x; height: 300px; object-fit: cover;" > -->
                 <div class="portfolio-info">
                   <h4>Home Control</h4>
                   <p>Internet of Things using Raspberry Pi</p>
@@ -190,9 +229,12 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
+            <div class="col-4 portfolio-item isotope-item filter-hardware">
               <div class="portfolio-content h-100">
-                <img src="assets/img/icpep-awarding.jpg" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" >
+                <!-- <img src="assets/img/icpep-awarding.jpg" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" > -->
+                <div class="square-wrapper">
+                  <img src="assets/img/icpep-awarding.jpg"  class="img-cropped" alt="photo">
+                </div>
                 <div class="portfolio-info">
                   <h4>1st Runner Up</h4>
                   <p>Digital Electronics Breadboarding Regional Competetion</p>
@@ -202,9 +244,12 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-gamedev">
+            <div class="col-4 portfolio-item isotope-item filter-gamedev">
               <div class="portfolio-content h-100">
-                <img src="assets/img/3D Game.png" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" >
+                <div class="square-wrapper">
+                  <img src="assets/img/3D Game.png"  class="img-cropped" alt="photo">
+                </div>
+                <!-- <img src="assets/img/3D Game.png" class="img-fluid" alt="" style="width: 400x; height: 300px; object-fit: cover;" > -->
                 <div class="portfolio-info">
                   <h4>Ball Run</h4>
                   <p>A 3D Game using Unity</p>
@@ -247,8 +292,8 @@
 
       <!-- Section Title -->
       <div class="main-container section-title" data-aos="fade-up">
-        <!-- <h2>Contact</h2> -->
-        <p>Should you have any questions, feel free to contact me through the details provided below.
+        <h2 class="container-item">Contact</h2>
+        <p class="container-item">Should you have any questions, feel free to contact me through the details provided below.
 
         </p>
       </div><!-- End Section Title -->
@@ -259,7 +304,7 @@
 
           <div class="col">
 
-            <div class="info-wrap ">
+            <div class="info-wrap mx-auto">
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
