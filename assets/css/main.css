@@ -150,13 +150,15 @@ h6 {
 @media (min-width: 576px) and (max-width: 1999px) {
   .main-container {
     margin-left: 30vw !important; 
+    margin-right: 7vw !important;
   }
 
 }
 
 @media (min-width: 1199.98px) {
   .main-container {
-    margin-left: 25vw !important; 
+    margin-left: 18vw !important;
+    margin-right: 7vw !important; 
   }
 
   .navmenu a:hover,
@@ -173,7 +175,12 @@ h6 {
 --------------------------------------------------------------*/
 
 /* sm */
-@media (min-width: 575.98px) and (max-width: 991.97px) {
+@media (min-width: 575.98px) and (max-width: 767.97px) {
+
+  .nav-bar {
+    width: 30vw !important;
+  }
+
   .navbar-brand {
     width: 150px !important;
     height: auto;
@@ -189,13 +196,23 @@ h6 {
 
 /* md-xl*/
 @media (min-width: 767.98px) and (max-width: 1199.97px) {
+  .nav-bar {
+    width: 30vw !important;
+  }
+
+  .navbar-brand {
+    width: 210px !important;
+    height: auto;
+    margin-left: 10px;
+  }
+
   .social-links {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-top: 10px;
   }
 
   .social-links i {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .social-links a {
@@ -215,40 +232,44 @@ h6 {
     margin-left: 5px !important;
   }
 
-  .navbar-brand {
-    width: 210px !important;
-    height: auto;
-    margin-left: 10px;
-  }
+
 
   .navmenu a,
   .navmenu a:focus {
     padding: 15px 10px;
-    font-size: 16px !important;
-    font-weight: 400;
+    font-size: 14px !important;
+    font-weight: 300;
     letter-spacing: 2px;
   }
 
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    font-size: 22px !important;
+    font-size: 20px !important;
   }
 }
   
 /* xl - infinity  */
 @media (min-width: 1199.98px) {
 
+  .nav-bar {
+    width: 20vw !important;
+  }
+
   .navbar-brand {
-    width: 250px !important;
+    width: 210px !important;
     height: auto;
     margin-left: 10px;
+  }
+
+  .social-links i {
+    font-size: 18px;
   }
 
   .navmenu a,
   .navmenu a:focus {
     padding: 15px 10px;
-    font-size: 16px !important;
+    font-size: 14px !important;
     font-weight: 400;
     letter-spacing: 2px;
   }
@@ -256,12 +277,9 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    font-size: 25px !important;
+    font-size: 20px !important;
   }
 
-  .social-links i {
-    font-size: 22px;
-  }
 
   ul {
     margin-top: 10px;
