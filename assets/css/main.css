@@ -166,6 +166,14 @@ h6 {
     height: auto;
     margin-left: 10px;
   }
+}
+
+/* SIZE 2 sm-md */
+@media (min-width: 576px) and (max-width: 768px) {
+  ul {
+    margin-bottom: 180px !important;
+    margin-left: 5px !important;
+  }
 
 }
 
@@ -180,7 +188,7 @@ h6 {
 }
 
 ul {
-  margin-bottom: 180px !important;
+  margin-bottom: 180px;
   margin-left: 30px;
 }
 
@@ -748,7 +756,7 @@ section,
   .portfolio .portfolio-content .portfolio-info p {
     font-size: 12px !important;
     font-weight: 300 !important;
-    margin-bottom: 1px !important;
+    /* margin-bottom: 1px !important; */
   }
 
   .portfolio .portfolio-content .portfolio-info .preview-link,
@@ -1099,6 +1107,13 @@ ul.portfolio-filters {
     padding: 0;
     margin-bottom: 0;
     font-size: 12px !important;
+  }
+}
+
+/* SIZE 2 sm-md */
+@media (min-width: 576px) and (max-width: 768px) {
+  .info-wrap {
+    margin: 0 !important;
   }
 }
 
