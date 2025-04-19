@@ -146,8 +146,8 @@ h6 {
   margin-left: 0px !important;
 }
 
-/* SIZE 2 sm-md */
-@media (min-width: 576px) and (max-width: 768px) {
+/* SIZE 2 sm */
+@media (min-width: 576px) and (max-width: 992px) {
   .main-container {
     margin-left: 30vw !important; 
   }
@@ -159,8 +159,8 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 
-/* SIZE 2 sm-md */
-@media (min-width: 576px) and (max-width: 768px) {
+/* SIZE 2 sm */
+@media (min-width: 576px) and (max-width: 992px) {
   .navbar-brand {
     width: 150px !important;
     height: auto;
@@ -168,8 +168,8 @@ h6 {
   }
 }
 
-/* SIZE 2 sm-md */
-@media (min-width: 576px) and (max-width: 768px) {
+/* SIZE 2 sm */
+@media (min-width: 576px) and (max-width: 992px) {
   ul {
     margin-bottom: 180px !important;
     margin-left: 5px !important;
@@ -330,7 +330,7 @@ ul {
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
-/* @media screen and (max-width: 768px) {
+/* @media screen and (max-width: 992px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -506,8 +506,8 @@ section,
   
 }
 
-/* SIZE 2 sm-md */
-@media (min-width: 576px) and (max-width: 768px) {
+/* SIZE 2 sm */
+@media (min-width: 576px) and (max-width: 992px) {
   .download-resume {
     padding: 10px 20px;
     background-color:rgba(130, 78, 131, 0.7);
@@ -766,6 +766,7 @@ section,
 }
 
 
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -811,12 +812,12 @@ ul.portfolio-filters {
   width: 400px !important;
 } */
 
-/* @media (max-width: 767.98px) { 
+/* @media (max-width: 992.98px) { 
   .portfolio .portfolio-content {
     width: 300px !important;
     height: 300px !important;
   }
-} */
+}  */
 
 .square-wrapper {
   position: relative;
@@ -1110,8 +1111,8 @@ ul.portfolio-filters {
   }
 }
 
-/* SIZE 2 sm-md */
-@media (min-width: 576px) and (max-width: 768px) {
+/* SIZE 2 sm */
+@media (min-width: 576px) and (max-width: 992px) {
   .info-wrap {
     margin: 0 !important;
   }
