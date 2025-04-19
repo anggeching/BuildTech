@@ -147,7 +147,7 @@ h6 {
 }
 
 /* SIZE 2 sm */
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 1200px) {
   .main-container {
     margin-left: 30vw !important; 
   }
@@ -160,22 +160,19 @@ h6 {
 --------------------------------------------------------------*/
 
 /* SIZE 2 sm */
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .navbar-brand {
     width: 150px !important;
     height: auto;
     margin-left: 10px;
   }
-}
 
-/* SIZE 2 sm */
-@media (min-width: 576px) and (max-width: 992px) {
   ul {
     margin-bottom: 180px !important;
     margin-left: 5px !important;
   }
-
 }
+
 
 .mobile-nav-toggle {
   display: none;
@@ -499,15 +496,12 @@ section,
     justify-content: center; /* Centers text horizontally */
     align-items: center; /* Centers text vertically */
     text-align: center; /* Ensures text is centered */
-
-
-
   }
   
 }
 
 /* SIZE 2 sm */
-@media (min-width: 576px) and (max-width: 992px) {
+@media (min-width: 576px) {
   .download-resume {
     padding: 10px 20px;
     background-color:rgba(130, 78, 131, 0.7);
@@ -524,6 +518,20 @@ section,
     justify-content: center; 
     align-items: center; 
     text-align: center; 
+  }
+
+}
+
+@media (min-width: 992px) {
+  .hero h2 {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 700;
+  }
+
+  .hero p {
+    margin: 5px 0 0 0;
+    font-size: 26px;
   }
 
 }
