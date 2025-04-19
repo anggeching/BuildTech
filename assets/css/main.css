@@ -159,6 +159,12 @@ h6 {
     margin-left: 25vw !important; 
   }
 
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    font-size: 25px !important;
+  }
+
 }
 
 
@@ -166,8 +172,8 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 
-/* SIZE 2 sm */
-@media (min-width: 576px) and (max-width: 991px) {
+/* sm */
+@media (min-width: 575.98px) and (max-width: 991.97px) {
   .navbar-brand {
     width: 150px !important;
     height: auto;
@@ -180,6 +186,98 @@ h6 {
   }
 }
 
+
+/* md-xl*/
+@media (min-width: 767.98px) and (max-width: 1199.97px) {
+  .social-links {
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+  .social-links i {
+    font-size: 20px;
+  }
+
+  .social-links a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--default-color);
+    width: 50px !important;
+    padding: 0px 0px !important;
+    justify-content: center;
+    padding-left: 0px !important;
+    margin-left: 0px !important;
+  }
+
+  ul {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 5px !important;
+  }
+
+  .navbar-brand {
+    width: 210px !important;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 15px 10px;
+    font-size: 16px !important;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    font-size: 22px !important;
+  }
+}
+  
+/* xl - infinity  */
+@media (min-width: 1199.98px) {
+
+  .navbar-brand {
+    width: 250px !important;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    padding: 15px 10px;
+    font-size: 16px !important;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+
+  .navmenu a:hover,
+  .navmenu .active,
+  .navmenu .active:focus {
+    font-size: 25px !important;
+  }
+
+  .social-links i {
+    font-size: 22px;
+  }
+
+  ul {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    margin-left: 5px !important;
+  }
+
+}
+
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+}
 
 .mobile-nav-toggle {
   display: none;
@@ -240,25 +338,37 @@ ul {
   margin-bottom: auto;
 }
 
-@media (min-width: 992px) {
-  .social-links {
-    margin-bottom: 40px;
-    margin-top: 10px;
-  }
 
-  .social-links a {
-    display: inline-flex;
-    align-items: center;
-    color: var(--default-color);
-    width: 50px !important;
-    height: 10px;
-    transition: 0.3s;
-    padding: 0px 0px !important;
-    justify-content: center;
-    padding-left: 0px !important;
-    margin-left: 0px !important;
-  }
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  padding: 10px 10px;
+  font-family: var(--nav-font);
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: 0.3s;
+  width: 80%;
+  letter-spacing: 1px;
 }
+
+.navmenu a .navicon,
+.navmenu a:focus .navicon {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+/* Hover, Active, Focus states for links */
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+  color: var(--nav-hover-color);
+  font-size: 14px;
+}
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -477,7 +587,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-
+/* global hero */
 .hero {
   height: 75vh;
   position: relative;
@@ -524,7 +634,7 @@ section,
   
 }
 
-/* SIZE 2 sm */
+/* sm to all */
 @media (min-width: 576px) {
   .download-resume {
     padding: 10px 20px;
@@ -546,7 +656,8 @@ section,
 
 }
 
-@media (min-width: 767px) and (max-width: 992px) {
+/* md */
+@media (min-width: 767.98px) and (max-width: 991.97px) {
   .hero h2 {
     margin: 0;
     font-size: 44px;
@@ -566,7 +677,8 @@ section,
   
   }
 
-@media (min-width: 992px) and (max-width: 1199.97px){
+/* lg - xl  */
+@media (min-width: 991.98px) and (max-width: 1199.97px){
   .hero h2 {
     margin: 0;
     font-size: 54px;
@@ -604,25 +716,26 @@ section,
   
     
     }
+  
+/* xl - infinity  */
+@media (min-width: 1399.98px) {
+  .hero h2 {
+    margin: 0;
+    font-size: 54px;
+    font-weight: 700;
+  }
 
-    @media (min-width: 1399.98px) {
-      .hero h2 {
-        margin: 0;
-        font-size: 54px;
-        font-weight: 700;
-      }
-    
-      .hero p {
-        margin: 5px 0 0 0;
-        font-size: 26px;
-      }
-    
-      .hero p span {
-        letter-spacing: 1px;
-        border-bottom: 2px solid var(--accent-color);
-      }
-    
-      }
+  .hero p {
+    margin: 5px 0 0 0;
+    font-size: 26px;
+  }
+
+  .hero p span {
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent-color);
+  }
+
+  }
 
 
 .hero img {
@@ -636,54 +749,13 @@ section,
 
 }
 
-/* .hero .container .container-item {
-  margin-right: 50px;
-} */
-
-
-
-
-
-
-/* .download-resume {
-  padding: 10px 20px;
-  background-color:rgba(130, 78, 131, 0.7);
-  border: none;
-  border-radius: 0;
-  color: white; 
-  text-decoration: none;
-  font-family: var(--heading-font);
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  width: 250px;
-
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  text-align: center; 
-}
- */
-
 
 .download-resume:hover {
   background-color: var(--accent-color);
   color: white;
   transition: background-color 0.3s ease;
 }
-
-
-.hero .social-links {
-  margin-top: 25px;
-}
-
-
-.hero .social-links a:hover {
-  color: var(--accent-color);
-}
  
-
-
 .download-resume {
   padding: 10px 20px;
   font-size: 16px;
@@ -693,40 +765,6 @@ section,
   align-items: center; /* Centers text vertically */
   text-align: center; /* Ensures text is centered */
 }
-
-
-
-
-
-.navmenu a,
-.navmenu a:focus {
-  color: var(--nav-color);
-  padding: 10px 10px;
-  font-family: var(--nav-font);
-  font-size: 12px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  transition: 0.3s;
-  width: 80%;
-  letter-spacing: 1px;
-}
-
-.navmenu a .navicon,
-.navmenu a:focus .navicon {
-  font-size: 14px;
-  margin-right: 20px;
-}
-
-/* Hover, Active, Focus states for links */
-.navmenu a:hover,
-.navmenu .active,
-.navmenu .active:focus {
-  color: var(--nav-hover-color);
-  font-size: 14px;
-}
-
 
 /*--------------------------------------------------------------
 # About Section
