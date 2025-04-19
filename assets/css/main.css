@@ -147,9 +147,16 @@ h6 {
 }
 
 /* SIZE 2 sm */
-@media (min-width: 576px) and (max-width: 1200px) {
+@media (min-width: 576px) and (max-width: 1999px) {
   .main-container {
     margin-left: 30vw !important; 
+  }
+
+}
+
+@media (min-width: 1199.98px) {
+  .main-container {
+    margin-left: 25vw !important; 
   }
 
 }
@@ -470,6 +477,7 @@ section,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   height: 75vh;
   position: relative;
@@ -488,7 +496,6 @@ section,
 
 /* SIZE 1 */
 @media (max-width: 576px) {
-
   .hero h2 {
     margin: 0;
     font-size: 34px;
@@ -559,7 +566,7 @@ section,
   
   }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.97px){
   .hero h2 {
     margin: 0;
     font-size: 54px;
@@ -576,13 +583,46 @@ section,
     border-bottom: 2px solid var(--accent-color);
   }
 
-  
   }
+
+  @media (min-width: 1199.98px) and (max-width: 1399.98px) {
+    .hero h2 {
+      margin: 0;
+      font-size: 50px;
+      font-weight: 700;
+    }
   
+    .hero p {
+      margin: 5px 0 0 0;
+      font-size: 20px;
+    }
+  
+    .hero p span {
+      letter-spacing: 1px;
+      border-bottom: 2px solid var(--accent-color);
+    }
+  
+    
+    }
 
-
-
-
+    @media (min-width: 1399.98px) {
+      .hero h2 {
+        margin: 0;
+        font-size: 54px;
+        font-weight: 700;
+      }
+    
+      .hero p {
+        margin: 5px 0 0 0;
+        font-size: 26px;
+      }
+    
+      .hero p span {
+        letter-spacing: 1px;
+        border-bottom: 2px solid var(--accent-color);
+      }
+    
+      }
 
 
 .hero img {
