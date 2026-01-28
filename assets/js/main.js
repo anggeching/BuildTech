@@ -9,6 +9,45 @@
 (function() {
   "use strict";
 
+  /**
+   * Initialize theme toggle
+   */
+  function initThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Get saved theme or use system preference
+    const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
+    applyTheme(savedTheme);
+    
+    // Toggle button listener
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      applyTheme(newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Listen for system theme changes
+    prefersDark.addEventListener('change', (e) => {
+      const newTheme = e.matches ? 'dark' : 'light';
+      applyTheme(newTheme);
+      localStorage.removeItem('theme');
+    });
+  }
+
+  function applyTheme(theme) {
+    const themeToggle = document.getElementById('themeToggle');
+    if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeToggle.classList.add('dark-mode');
+      themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+    } else {
+      document.body.classList.remove('dark-mode');
+      themeToggle.classList.remove('dark-mode');
+      themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+    }
+  }
 
   /**
    * Toggle mobile nav dropdowns
@@ -32,7 +71,10 @@
     });
   }
 
-  /**
+  // Initialize theme toggle on load
+  initThemeToggle();
+
+  /**s
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');

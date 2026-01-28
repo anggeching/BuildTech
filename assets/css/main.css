@@ -952,9 +952,11 @@ ul.portfolio-filters {
   color: var(--accent-color);
 }
 
+/*
 .portfolio .portfolio-filters li:first-child {
    0;
 }
+*/
 
 .portfolio .portfolio-filters li:last-child {
   margin-right: 0;
