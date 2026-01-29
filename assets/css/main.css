@@ -42,6 +42,12 @@ body.dark-mode {
   --surface-color: #ffffff;
 }
 
+/* When dark mode is active, make elements using the light preset switch to dark-friendly values */
+body.dark-mode .light-background {
+  --background-color: #0b1220;
+  --surface-color: #0f1720;
+}
+
 .dark-background {
   --background-color: #040b14;
   --default-color: #ffffff;
