@@ -16,6 +16,18 @@
   --icon-color: #9EA1A7;
 }
 
+/* Dark mode variables applied when `body.dark-mode` is present */
+body.dark-mode {
+  --background-color: #040b14;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #8f63a0;
+  --surface-color: #0f1720;
+  --contrast-color: #ffffff;
+  --icon-color: #cfcfd3;
+  --nav-color: #cfcfd3;
+}
+
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
@@ -1496,4 +1508,52 @@ ul.portfolio-filters {
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
+
+
+
+/* Dark-mode overrides (ensure components that used hard-coded colors follow variables) */
+body.dark-mode {
+  background-color: var(--background-color);
+  color: var(--default-color);
+}
+
+body.dark-mode a {
+  color: var(--accent-color);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--heading-color);
+}
+
+body.dark-mode .hero p,
+body.dark-mode .section-title p,
+body.dark-mode .portfolio-info p,
+body.dark-mode .contact .info-item p {
+  color: var(--default-color);
+}
+
+body.dark-mode .navmenu a,
+body.dark-mode .navmenu a:focus {
+  color: var(--nav-color);
+}
+body.dark-mode .navmenu a:hover,
+body.dark-mode .navmenu .active,
+body.dark-mode .navmenu .active:focus {
+  color: var(--nav-hover-color);
+}
+
+body.dark-mode .social-links a,
+body.dark-mode .social-links .theme-toggle {
+  color: var(--icon-color);
+}
+
+body.dark-mode .footer {
+  background-color: var(--background-color);
+  color: var(--default-color);
+}
 

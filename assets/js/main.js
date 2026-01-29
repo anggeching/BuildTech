@@ -9,45 +9,7 @@
 (function() {
   "use strict";
 
-  /**
-   * Initialize theme toggle
-   */
-  function initThemeToggle() {
-    const themeToggle = document.getElementById('themeToggle');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    // Get saved theme or use system preference
-    const savedTheme = localStorage.getItem('theme') || (prefersDark.matches ? 'dark' : 'light');
-    applyTheme(savedTheme);
-    
-    // Toggle button listener
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      applyTheme(newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-
-    // Listen for system theme changes
-    prefersDark.addEventListener('change', (e) => {
-      const newTheme = e.matches ? 'dark' : 'light';
-      applyTheme(newTheme);
-      localStorage.removeItem('theme');
-    });
-  }
-
-  function applyTheme(theme) {
-    const themeToggle = document.getElementById('themeToggle');
-    if (theme === 'dark') {
-      document.body.classList.add('dark-mode');
-      themeToggle.classList.add('dark-mode');
-      themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
-    } else {
-      document.body.classList.remove('dark-mode');
-      themeToggle.classList.remove('dark-mode');
-      themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
-    }
-  }
+  
 
   /**
    * Toggle mobile nav dropdowns
@@ -71,29 +33,7 @@
     });
   }
 
-  // Initialize theme toggle on load
-  initThemeToggle();
-
-  /**s
-   * Scroll top button
-   */
-  let scrollTop = document.querySelector('.scroll-top');
-
-  function toggleScrollTop() {
-    if (scrollTop) {
-      window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
-    }
-  }
-  scrollTop.addEventListener('click', (e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-
-  window.addEventListener('load', toggleScrollTop);
-  document.addEventListener('scroll', toggleScrollTop);
+  
 
   /**
    * Animation on scroll function and init
@@ -108,27 +48,63 @@
   }
   window.addEventListener('load', aosInit);
 
-  /**
-   * Init typed.js
-   */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
 
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
+    /**
+     * Theme toggle: apply theme and wire button
+     */
+    function applyTheme(theme) {
+      const themeToggle = document.getElementById('themeToggle');
+      if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+        if (themeToggle) themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+      } else {
+        document.body.classList.remove('dark-mode');
+        if (themeToggle) themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+      }
+    }
 
+    function initThemeToggle() {
+      const themeToggle = document.getElementById('themeToggle');
+      if (!themeToggle) return;
+
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const saved = localStorage.getItem('theme');
+      const initial = saved ? saved : (prefersDark ? 'dark' : 'light');
+
+      applyTheme(initial);
+
+      themeToggle.addEventListener('click', () => {
+        const current = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+      });
+    }
+
+    window.addEventListener('load', initThemeToggle);
+
+    /**
+     * Scroll top button
+     */
+    let scrollTop = document.querySelector('.scroll-top');
+
+    function toggleScrollTop() {
+      if (scrollTop) {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      }
+    }
+    if (scrollTop) {
+      scrollTop.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    }
+
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
   /**
    * Animate the skills items on reveal
    */
