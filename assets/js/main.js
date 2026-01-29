@@ -48,6 +48,25 @@
   }
   window.addEventListener('load', aosInit);
 
+  /**
+   * Init typed.js (reads `data-typed-items` from `.typed`)
+   */
+  (function initTyped() {
+    const selectTyped = document.querySelector('.typed');
+    if (!selectTyped) return;
+    if (typeof Typed === 'undefined') return;
+    const raw = selectTyped.getAttribute('data-typed-items') || '';
+    const items = raw.split(',').map(s => s.trim()).filter(Boolean);
+    if (items.length === 0) return;
+    new Typed('.typed', {
+      strings: items,
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40,
+      backDelay: 2000
+    });
+  })();
+
 
     /**
      * Theme toggle: apply theme and wire button
