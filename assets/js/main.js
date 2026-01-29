@@ -73,12 +73,15 @@
      */
     function applyTheme(theme) {
       const themeToggle = document.getElementById('themeToggle');
+      const logo = document.querySelector('.navbar-brand');
       if (theme === 'dark') {
         document.body.classList.add('dark-mode');
         if (themeToggle) themeToggle.innerHTML = '<i class="bi bi-sun-fill"></i>';
+        if (logo) logo.src = 'assets/img/logo-darkmode.png';
       } else {
         document.body.classList.remove('dark-mode');
         if (themeToggle) themeToggle.innerHTML = '<i class="bi bi-moon-fill"></i>';
+        if (logo) logo.src = 'assets/img/logo-lightmode.png';
       }
     }
 
